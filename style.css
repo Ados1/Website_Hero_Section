@@ -1,134 +1,65 @@
-body {
-  font-family: sans-serif;
-}
-
-.readers {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-}
-
-.nbut {
-  box-sizing: content-box;
-  padding: 0;
-  outline: 0;
-  border: none;
-  background-color: none;
-  width: 20px;
-  height: 14px;
-  cursor: pointer;
-  color: black;
-}
-
-.logo img {
-  width: 70px;
-}
-
-.header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 70px;
-}
-
-.container {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.fa-bars {
-  font-size: 30px;
-}
-
-.nav {
-  display: none;
-}
-
-*/ {
+* {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
-/*Website Hero Section*/
-
-/*.Hero {
+.Hero {
+  position: relative;
+  background-image: url("img/ferrari.jpg");
+  width: 100%;
   height: 400px;
-  background-image: url(img/ferrari.jpg);
-  background-position: center;
-  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-.mach {
+.hero_content {
   display: flex;
-  align-self: flex-end;
-}*/
-
-@media (min-width: 900px) {
-  .nbut {
-    display: none;
-  }
-
-  .nav {
-    display: block;
-  }
-
-  .nav ul {
-    display: flex;
-    align-items: baseline;
-    list-style: none;
-    color: black;
-  }
-
-  .nav li:not(:last-child) {
-    margin-right: 20px;
-  }
-
-  .btn {
-    text-decoration: none;
-  }
-
-  .btn:hover {
-    color: rgb(241, 162, 162);
-  }
-
-  .container {
-    width: 1400px;
-  }
-
-  /*Website Hero Section*/
-
+  flex-direction: column;
+  row-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  color: antiquewhite;
+}
+.hero_content .cal-butn {
+  background-color: antiquewhite;
+  color: black;
+  padding: 0.1rem 0.1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+@media screen and (min-width: 768px) {
   .Hero {
     background-image: url(img/ferrari.jpg);
-    height: 100vh;
     background-size: cover;
+    height: 100vh;
     display: flex;
     text-align: center;
-    flex-direction: column;
     align-items: center;
-  }
-  .mach {
-    font-size: 4rem;
-    color: antiquewhite;
-    margin-bottom: 1rem;
+    flex-direction: column;
+    position: relative;
   }
 
-  .get {
-    font-size: 2rem;
+  .hero_content {
+    display: flex;
+    margin-top: -4rem;
+  }
+
+  .hero_content .mach {
+    font-size: 5rem;
+    color: antiquewhite;
+    margin-bottom: 1.5rem;
+    margin-top: 8rem;
+  }
+  .hero_content .get {
+    font-size: 3rem;
     color: antiquewhite;
     margin-bottom: 1.5rem;
   }
-
-  .cal-butn {
+  .hero_content .cal-butn {
     background-color: antiquewhite;
     color: black;
     padding: 1rem 2rem;
     border-radius: 10px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
 
